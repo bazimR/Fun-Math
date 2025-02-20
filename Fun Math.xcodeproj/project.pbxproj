@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		A5F0DC4E2D66DE9F002FD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F0DC352D66DE9F002FD7BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F0DC3C2D66DE9F002FD7BF;
+			remoteInfo = "Fun Math";
+		};
+		A5F0DC582D66DE9F002FD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F0DC352D66DE9F002FD7BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F0DC3C2D66DE9F002FD7BF;
+			remoteInfo = "Fun Math";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5F0DC3D2D66DE9F002FD7BF /* Fun Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F0DC4D2D66DE9F002FD7BF /* Fun MathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fun MathTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F0DC572D66DE9F002FD7BF /* Fun MathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fun MathUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A5F0DC3F2D66DE9F002FD7BF /* Fun Math */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Fun Math";
+			sourceTree = "<group>";
+		};
+		A5F0DC502D66DE9F002FD7BF /* Fun MathTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Fun MathTests";
+			sourceTree = "<group>";
+		};
+		A5F0DC5A2D66DE9F002FD7BF /* Fun MathUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Fun MathUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5F0DC3A2D66DE9F002FD7BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F0DC4A2D66DE9F002FD7BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F0DC542D66DE9F002FD7BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5F0DC342D66DE9F002FD7BF = {
+			isa = PBXGroup;
+			children = (
+				A5F0DC3F2D66DE9F002FD7BF /* Fun Math */,
+				A5F0DC502D66DE9F002FD7BF /* Fun MathTests */,
+				A5F0DC5A2D66DE9F002FD7BF /* Fun MathUITests */,
+				A5F0DC3E2D66DE9F002FD7BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5F0DC3E2D66DE9F002FD7BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5F0DC3D2D66DE9F002FD7BF /* Fun Math.app */,
+				A5F0DC4D2D66DE9F002FD7BF /* Fun MathTests.xctest */,
+				A5F0DC572D66DE9F002FD7BF /* Fun MathUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5F0DC3C2D66DE9F002FD7BF /* Fun Math */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F0DC612D66DE9F002FD7BF /* Build configuration list for PBXNativeTarget "Fun Math" */;
+			buildPhases = (
+				A5F0DC392D66DE9F002FD7BF /* Sources */,
+				A5F0DC3A2D66DE9F002FD7BF /* Frameworks */,
+				A5F0DC3B2D66DE9F002FD7BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A5F0DC3F2D66DE9F002FD7BF /* Fun Math */,
+			);
+			name = "Fun Math";
+			packageProductDependencies = (
+			);
+			productName = "Fun Math";
+			productReference = A5F0DC3D2D66DE9F002FD7BF /* Fun Math.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5F0DC4C2D66DE9F002FD7BF /* Fun MathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F0DC642D66DE9F002FD7BF /* Build configuration list for PBXNativeTarget "Fun MathTests" */;
+			buildPhases = (
+				A5F0DC492D66DE9F002FD7BF /* Sources */,
+				A5F0DC4A2D66DE9F002FD7BF /* Frameworks */,
+				A5F0DC4B2D66DE9F002FD7BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F0DC4F2D66DE9F002FD7BF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A5F0DC502D66DE9F002FD7BF /* Fun MathTests */,
+			);
+			name = "Fun MathTests";
+			packageProductDependencies = (
+			);
+			productName = "Fun MathTests";
+			productReference = A5F0DC4D2D66DE9F002FD7BF /* Fun MathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5F0DC562D66DE9F002FD7BF /* Fun MathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F0DC672D66DE9F002FD7BF /* Build configuration list for PBXNativeTarget "Fun MathUITests" */;
+			buildPhases = (
+				A5F0DC532D66DE9F002FD7BF /* Sources */,
+				A5F0DC542D66DE9F002FD7BF /* Frameworks */,
+				A5F0DC552D66DE9F002FD7BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F0DC592D66DE9F002FD7BF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A5F0DC5A2D66DE9F002FD7BF /* Fun MathUITests */,
+			);
+			name = "Fun MathUITests";
+			packageProductDependencies = (
+			);
+			productName = "Fun MathUITests";
+			productReference = A5F0DC572D66DE9F002FD7BF /* Fun MathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5F0DC352D66DE9F002FD7BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A5F0DC3C2D66DE9F002FD7BF = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A5F0DC4C2D66DE9F002FD7BF = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A5F0DC3C2D66DE9F002FD7BF;
+					};
+					A5F0DC562D66DE9F002FD7BF = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A5F0DC3C2D66DE9F002FD7BF;
+					};
+				};
+			};
+			buildConfigurationList = A5F0DC382D66DE9F002FD7BF /* Build configuration list for PBXProject "Fun Math" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5F0DC342D66DE9F002FD7BF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A5F0DC3E2D66DE9F002FD7BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5F0DC3C2D66DE9F002FD7BF /* Fun Math */,
+				A5F0DC4C2D66DE9F002FD7BF /* Fun MathTests */,
+				A5F0DC562D66DE9F002FD7BF /* Fun MathUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5F0DC3B2D66DE9F002FD7BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F0DC4B2D66DE9F002FD7BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F0DC552D66DE9F002FD7BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5F0DC392D66DE9F002FD7BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F0DC492D66DE9F002FD7BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F0DC532D66DE9F002FD7BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5F0DC4F2D66DE9F002FD7BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5F0DC3C2D66DE9F002FD7BF /* Fun Math */;
+			targetProxy = A5F0DC4E2D66DE9F002FD7BF /* PBXContainerItemProxy */;
+		};
+		A5F0DC592D66DE9F002FD7BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5F0DC3C2D66DE9F002FD7BF /* Fun Math */;
+			targetProxy = A5F0DC582D66DE9F002FD7BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A5F0DC5F2D66DE9F002FD7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5F0DC602D66DE9F002FD7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5F0DC622D66DE9F002FD7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fun Math/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishalbazim.Fun-Math";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5F0DC632D66DE9F002FD7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fun Math/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishalbazim.Fun-Math";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5F0DC652D66DE9F002FD7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishalbazim.Fun-MathTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fun Math.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fun Math";
+			};
+			name = Debug;
+		};
+		A5F0DC662D66DE9F002FD7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishalbazim.Fun-MathTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fun Math.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fun Math";
+			};
+			name = Release;
+		};
+		A5F0DC682D66DE9F002FD7BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishalbazim.Fun-MathUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fun Math";
+			};
+			name = Debug;
+		};
+		A5F0DC692D66DE9F002FD7BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rishalbazim.Fun-MathUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fun Math";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5F0DC382D66DE9F002FD7BF /* Build configuration list for PBXProject "Fun Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F0DC5F2D66DE9F002FD7BF /* Debug */,
+				A5F0DC602D66DE9F002FD7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F0DC612D66DE9F002FD7BF /* Build configuration list for PBXNativeTarget "Fun Math" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F0DC622D66DE9F002FD7BF /* Debug */,
+				A5F0DC632D66DE9F002FD7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F0DC642D66DE9F002FD7BF /* Build configuration list for PBXNativeTarget "Fun MathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F0DC652D66DE9F002FD7BF /* Debug */,
+				A5F0DC662D66DE9F002FD7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F0DC672D66DE9F002FD7BF /* Build configuration list for PBXNativeTarget "Fun MathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F0DC682D66DE9F002FD7BF /* Debug */,
+				A5F0DC692D66DE9F002FD7BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5F0DC352D66DE9F002FD7BF /* Project object */;
+}
