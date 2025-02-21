@@ -33,7 +33,6 @@ struct ContentView: View {
     @State private var upToNumber: Int = 2
     @State private var questions: Int = 5
     @State private var questionConfigSet: Bool = false
-
     @State private var curatedQuestions: [Questions] = []
 
     private var questionOptions: [Int] = [5, 10, 15]
@@ -45,68 +44,84 @@ struct ContentView: View {
                     startPoint: .top,
                     endPoint: .bottomTrailing
                 ).ignoresSafeArea()
-                VStack {
-                    Form {
-                        Section {
-                            VStack(alignment: .leading, spacing: 5) {
-                                HStack(alignment: .lastTextBaseline, spacing: 0)
-                                {
-                                    Text("Practice tables up to")
-                                        .font(.title2.bold())
-                                        .foregroundColor(.white)
-                                    Spacer()
-                                    Text(" \(upToNumber)")
-                                        .font(.largeTitle.bold())
-                                        .foregroundColor(
-                                            .white
-                                        )
-                                }
-                                Stepper(
-                                    "Up to number",
-                                    value: $upToNumber,
-                                    in: 2...12,
-                                    step: 1
-                                )
-                                .labelsHidden()
-                            }
-
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text("Choose Difficulty Level")
-                                    .font(.title2.bold())
-                                    .foregroundColor(.white)
-                                Picker(
-                                    "Questions",
-                                    selection: $questions
-                                ) {
-                                    ForEach(questionOptions, id: \.self) {
-                                        Text("\($0)")
-                                    }
-                                }.labelsHidden().pickerStyle(.segmented)
-                            }
-
-                            Button {
-                                setQuestionConfig()
-                            } label: {
-                                Text("Start")
-                                    .frame(maxWidth: .infinity)
-                                    .font(.title3)
-                            }.buttonStyle(.borderedProminent).controlSize(
-                                .large
-                            ).tint(
-                                .green
-                            )
-                        }.listRowBackground(CardBackGround())
-
-                    }.scrollContentBackground(.hidden)
+                if questionConfigSet {
                     List {
                         ForEach(curatedQuestions) { question in
                             Text(
                                 "\(question.num1) x \(question.num2) = \(question.product)"
                             )
                         }
+                    }.scrollContentBackground(.hidden)
+                } else {
+                    VStack {
+                        Form {
+                            Section {
+                                VStack(alignment: .leading, spacing: 5) {
+                                    HStack(
+                                        alignment: .lastTextBaseline, spacing: 0
+                                    ) {
+                                        Text("Practice tables up to")
+                                            .font(.title2.bold())
+                                            .foregroundColor(.white)
+                                        Spacer()
+                                        Text(" \(upToNumber)")
+                                            .font(.largeTitle.bold())
+                                            .foregroundColor(
+                                                .white
+                                            )
+                                    }
+                                    Stepper(
+                                        "Up to number",
+                                        value: $upToNumber,
+                                        in: 2...12,
+                                        step: 1
+                                    )
+                                    .labelsHidden()
+                                }
+
+                                VStack(alignment: .leading, spacing: 5) {
+                                    Text("Choose Difficulty Level")
+                                        .font(.title2.bold())
+                                        .foregroundColor(.white)
+                                    Picker(
+                                        "Questions",
+                                        selection: $questions
+                                    ) {
+                                        ForEach(questionOptions, id: \.self) {
+                                            Text("\($0)")
+                                        }
+                                    }.labelsHidden().pickerStyle(.segmented)
+                                }
+
+                                Button {
+                                    setQuestionConfig()
+                                } label: {
+                                    Text("Start")
+                                        .frame(maxWidth: .infinity)
+                                        .font(.title3)
+                                }.buttonStyle(.borderedProminent).controlSize(
+                                    .large
+                                ).tint(
+                                    .green
+                                )
+                            }.listRowBackground(CardBackGround())
+                        }.scrollContentBackground(.hidden).transition(
+                            .push(from: .bottom)
+                        ).shadow(
+                            color: .white,
+                            radius: 5,
+                            x: 0,
+                            y: 1
+                        )
                     }
                 }
-            }.navigationTitle("Fun Maths")
+            }.navigationTitle("Fun Maths").toolbar {
+                Button("Quit") {
+                    withAnimation {
+                        questionConfigSet.toggle()
+                    }
+                }
+            }
         }
     }
 
