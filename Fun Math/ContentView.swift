@@ -45,13 +45,18 @@ struct ContentView: View {
                     endPoint: .bottomTrailing
                 ).ignoresSafeArea()
                 if questionConfigSet {
-                    List {
-                        ForEach(curatedQuestions) { question in
-                            Text(
-                                "\(question.num1) x \(question.num2) = \(question.product)"
-                            )
-                        }
-                    }.scrollContentBackground(.hidden)
+                    ScrollView {
+                        VStack(alignment: .leading) {
+                            Text("Answer them correctly")
+                            ForEach(curatedQuestions) { question in
+                                Text(
+                                    "\(question.num1) x \(question.num2) = \(question.product)"
+                                )
+                            }
+                        }.padding().frame(maxWidth:.infinity).background(CardBackGround()).clipShape(
+                            .rect(cornerRadius: 10)
+                        )
+                    }.padding()
                 } else {
                     VStack {
                         Form {
@@ -95,6 +100,9 @@ struct ContentView: View {
 
                                 Button {
                                     setQuestionConfig()
+                                    withAnimation {
+                                        questionConfigSet.toggle()
+                                    }
                                 } label: {
                                     Text("Start")
                                         .frame(maxWidth: .infinity)
@@ -117,9 +125,7 @@ struct ContentView: View {
                 }
             }.navigationTitle("Fun Maths").toolbar {
                 Button("Quit") {
-                    withAnimation {
-                        questionConfigSet.toggle()
-                    }
+
                 }
             }
         }
