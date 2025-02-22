@@ -27,14 +27,13 @@ struct Questions: Identifiable {
     var product: Int {
         num1 * num2
     }
+    var answer: Int?
 }
-
 struct ContentView: View {
     @State private var upToNumber: Int = 2
     @State private var questions: Int = 5
     @State private var questionConfigSet: Bool = false
     @State private var curatedQuestions: [Questions] = []
-
     private var questionOptions: [Int] = [5, 10, 15]
     var body: some View {
         NavigationStack {
@@ -47,16 +46,42 @@ struct ContentView: View {
                 if questionConfigSet {
                     ScrollView {
                         VStack(alignment: .leading) {
-                            Text("Answer them correctly")
-                            ForEach(curatedQuestions) { question in
-                                Text(
-                                    "\(question.num1) x \(question.num2) = \(question.product)"
-                                )
+                            Text("Answer them correctly").font(.headline)
+                            ForEach(curatedQuestions.indices, id: \.self) {
+                                index in
+                                HStack {
+                                    Text(
+                                        "\(curatedQuestions[index].num1) x \(curatedQuestions[index].num2) = "
+                                    )
+                                    TextField(
+                                        "answers",
+                                        value: Binding(
+                                            get: {
+                                                curatedQuestions[index].answer
+                                            },
+                                            set: { newValue in
+                                                curatedQuestions[index].answer =
+                                                    newValue
+                                            }
+                                        ),
+                                        format: .number
+                                    )
+                                    .keyboardType(.numberPad)
+                                }
                             }
-                        }.padding().frame(maxWidth:.infinity).background(CardBackGround()).clipShape(
+                        }.padding().frame(
+                            maxWidth: .infinity, alignment: .leading
+                        ).background(
+                            CardBackGround()
+                        ).clipShape(
                             .rect(cornerRadius: 10)
                         )
-                    }.padding()
+                    }.padding().shadow(
+                        color: .white,
+                        radius: 5,
+                        x: 0,
+                        y: 1
+                    )
                 } else {
                     VStack {
                         Form {
