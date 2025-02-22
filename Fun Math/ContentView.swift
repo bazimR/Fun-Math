@@ -69,16 +69,28 @@ struct ContentView: View {
                                             }
                                         ),
                                         format: .number
-                                    )
-                                    .keyboardType(.numberPad)
-
+                                    ).frame(maxWidth: 80)
+                                        .keyboardType(.numberPad)
+                                    Spacer()
                                     Button {
+                                        // Action here
+                                        if let answer = curatedQuestions[index]
+                                            .answer
+                                        {
+                                            print(answer)
+                                        }
                                     } label: {
-                                        Image(systemName: "x.circle")
-                                            .foregroundColor(.white)
+                                        Image(systemName: "checkmark")
+                                            .resizable()  // Makes the icon resizable
+                                            .scaledToFit()  // Ensures it maintains aspect ratio
+                                            .frame(width: 20, height: 20)  // Sets the size of the icon
+                                            .foregroundColor(.white)  // Sets the color
                                     }
+                                    .frame(width: 40, height: 40)  // Sets the button's tappable area
+                                    .background(.green)  // Optional: Background color
+                                    .clipShape(Circle())
                                 }.padding(.horizontal, 20).padding(
-                                    .vertical, 25
+                                    .vertical, 15
                                 ).cornerRadius(20).overlay {
                                     RoundedRectangle(cornerRadius: 20).stroke(
                                         LinearGradient(
