@@ -45,13 +45,17 @@ struct ContentView: View {
                 ).ignoresSafeArea()
                 if questionConfigSet {
                     ScrollView {
-                        VStack(alignment: .leading) {
-                            Text("Answer them correctly").font(.headline)
+                        VStack(alignment: .leading, spacing: 30) {
+                            Text("Answer them correctly")
+                                .font(.headline)
+                                .foregroundColor(.white)
                             ForEach(curatedQuestions.indices, id: \.self) {
                                 index in
                                 HStack {
                                     Text(
                                         "\(curatedQuestions[index].num1) x \(curatedQuestions[index].num2) = "
+                                    ).font(.title3.bold()).foregroundColor(
+                                        .white
                                     )
                                     TextField(
                                         "answers",
@@ -67,6 +71,23 @@ struct ContentView: View {
                                         format: .number
                                     )
                                     .keyboardType(.numberPad)
+
+                                    Button {
+                                    } label: {
+                                        Image(systemName: "x.circle")
+                                            .foregroundColor(.white)
+                                    }
+                                }.padding(.horizontal, 20).padding(
+                                    .vertical, 25
+                                ).cornerRadius(20).overlay {
+                                    RoundedRectangle(cornerRadius: 20).stroke(
+                                        LinearGradient(
+                                            colors: [.white, .blue],
+                                            startPoint: .topLeading,
+                                            endPoint: .bottomTrailing
+                                        ),
+                                        lineWidth: 3
+                                    )
                                 }
                             }
                         }.padding().frame(
